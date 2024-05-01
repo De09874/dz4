@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="editText">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:background"> #E7E4EC</item>
+
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#8E5DD5</item>
+        <item name="android:ems">10</item>
+
+        <item name="android:textColorHint"> #A688D1</item>
+    </style>
+</resources>

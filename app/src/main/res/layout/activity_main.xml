@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Оформление заказов автобусных билетов"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputId"
+        style="@style/editText"
+        android:hint="Введите ID пользователя"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/inputStartPoint"
+        style="@style/editText"
+        android:hint="Введите место отправления"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputId" />
+
+    <EditText
+        android:id="@+id/inputEndPoint"
+        style="@style/editText"
+        android:inputType="textPersonName"
+        android:hint="Введите место прибытия"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputStartPoint" />
+
+    <EditText
+        android:id="@+id/inputStartTime"
+        style="@style/editText"
+        android:inputType="date"
+        android:hint="Введите дату отправления"
+        android:layout_marginTop="25dp"
+        android:maxLength="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEndPoint" />
+
+    <EditText
+        android:id="@+id/inputEndTime"
+        style="@style/editText"
+        android:layout_marginTop="10dp"
+        android:hint="Введите дату прибытия"
+        android:inputType="date"
+        android:maxLength="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputStartTime" />
+
+    <EditText
+        android:id="@+id/ticketPrice"
+        style="@style/editText"
+        android:inputType="number"
+        android:hint="Введите стоимость билета"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEndTime" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="330dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#8E5DD5"
+        android:text="Показать билет"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticketPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
